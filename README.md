@@ -1,4 +1,4 @@
-binary-package-host
+binary-package-host Cookbook
 ===================
 
 This cookbook is designed to setup binary package host for gentoo nodes on top of nginx
