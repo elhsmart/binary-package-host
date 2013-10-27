@@ -37,7 +37,7 @@ class Chef
           end
 
           run_command_with_systems_locale(
-            :command => "emerge -g --buildpkg --color n --nospinner --quiet#{expand_options(@new_resource.options)} #{pkg}"
+            :command => "emerge -g --buildpkg --buildpkg-exclude 'virtual/*' --color n --nospinner --quiet#{expand_options(@new_resource.options)} #{pkg}"
           )
         end
       end
